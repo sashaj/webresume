@@ -1,0 +1,6 @@
+.navItem {
+    margin-right: 10px;
+}
+.navItem:last-child {
+    margin-right: 0;
+}

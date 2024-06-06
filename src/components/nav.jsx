@@ -1,9 +1,9 @@
 import { Outlet, NavLink } from "react-router-dom";
+import styles from "../style/nav.module.css";
 
-export default function Layout(props) {
-    console.log(props);
+export default function Nav(props) {
     const listItems = props.items.map((el, index) => (
-        <li>
+        <li className={styles.navItem}>
             <NavLink to={el.link} key={el.key}>
                 {el.name}
             </NavLink>
