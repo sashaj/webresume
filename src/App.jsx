@@ -16,6 +16,7 @@ import ContactPage from "./pages/contact";
 import SkillsPage from "./pages/skills";
 import WorksPage from "./pages/works";
 import ErrorPage from "./pages/error";
+import CvPage from "./pages/cv";
 
 function App() {
     return (
@@ -27,7 +28,8 @@ function App() {
                     <Route path="skills" element={<SkillsPage />} />
                     <Route path="works" element={<WorksPage />} />
                     <Route path="about" element={<AboutPage />} />
-                    <Route path="*" element={<ErrorPage />} />
+                    <Route path="cv" element={<CvPage />} />
+                    <Route path="*" element={<Layout />} />
                 </Route>
             </Routes>
         </BrowserRouter>

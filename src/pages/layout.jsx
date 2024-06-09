@@ -19,7 +19,12 @@ export default function Layout() {
             key: "15345",
         },
         {
-            name: "contacts",
+            name: "cv",
+            link: "/cv",
+            key: "2454",
+        },
+        {
+            name: "contact",
             link: "/contacts",
             key: "1239012391209s",
         },

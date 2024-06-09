@@ -1,0 +1,26 @@
+.companies {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.companies img {
+    max-height: 40px;
+    opacity: 90%;
+}
+
+.companies a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workedwith {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
