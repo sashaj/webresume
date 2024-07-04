@@ -8,8 +8,10 @@
 }
 
 .companies img {
-    max-height: 40px;
-    opacity: 90%;
+    max-height: 80px;
+    /* opacity: 80%; */
+    max-width: 120px;
+    filter: grayscale(20%);
 }
 
 .companies a {
@@ -23,4 +25,5 @@
     color: #000;
     font-size: 14px;
     font-weight: 500;
+    margin-top: 50px;
 }

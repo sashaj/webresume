@@ -17,11 +17,11 @@ export default function About() {
 
     const imgs = [
         { key: "i1", link: "https://customertimes.com/", src: ctSVG },
-        { key: "i2", link: "https://endylab.ru/", src: endySVG },
         { key: "i3", link: "https://leadgid.ru/", src: leadgidSVG },
         { key: "i4", link: "https://appmost.ru/", src: mostSVG },
         { key: "i5", link: "https://platforma.bz/", src: platformaSVG },
         { key: "i6", link: "https://rcitsakha.ru/", src: rcitPNG },
+        { key: "i2", link: "https://endylab.ru/", src: endySVG },
     ];
 
     const imgItems = imgs.map((el, index) => (
