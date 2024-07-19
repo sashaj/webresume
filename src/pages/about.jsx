@@ -10,7 +10,7 @@ import styles from "../style/about.module.css";
 
 export default function About() {
     const skillText = [
-        { key: "1ab", text: "Hello! my name is Alexander Ivanov" },
+        { key: "1ab", text: "Hello! My name is Alexander Ivanov" },
         { key: "2ab", text: "I'm a front-end developer" },
         { key: "3ab", text: "Based in Yakutsk, Russia (gmt/utc +9)" },
     ];
