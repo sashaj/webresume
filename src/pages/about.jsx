@@ -13,6 +13,7 @@ export default function About() {
         { key: "1ab", text: "Hello! My name is Alexander Ivanov" },
         { key: "2ab", text: "I'm a front-end developer" },
         { key: "3ab", text: "Based in Yakutsk, Russia (gmt/utc +9)" },
+        { key: "4ab", text: "TEST" },
     ];
 
     const imgs = [
