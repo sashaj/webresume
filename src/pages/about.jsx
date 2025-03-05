@@ -1,10 +1,16 @@
 import Text from "../components/text";
-import ctSVG from "../assets/companies/ct.svg";
+import ctSVG from "../assets/companies/codingteam.svg";
 import endySVG from "../assets/companies/endy.svg";
 import leadgidSVG from "../assets/companies/leadgid.svg";
 import mostSVG from "../assets/companies/most.svg";
 import platformaSVG from "../assets/companies/platforma.svg";
+import stngSVG from "../assets/companies/stng.svg";
 import rcitPNG from "../assets/companies/rcit.png";
+import restomarketPNG from "../assets/companies/restomarket.png";
+import glavbeerPNG from "../assets/companies/glavbeer.png";
+import polarairPNG from "../assets/companies/polarair.png";
+import telezavrPNG from "../assets/companies/telezavr.png";
+import yakutskPNG from "../assets/companies/yakutsk.png";
 import { Link } from "react-router-dom";
 import styles from "../style/about.module.css";
 
@@ -17,17 +23,23 @@ export default function About() {
     ];
 
     const imgs = [
-        { key: "i1", link: "https://customertimes.com/", src: ctSVG },
-        { key: "i3", link: "https://leadgid.ru/", src: leadgidSVG },
-        { key: "i4", link: "https://appmost.ru/", src: mostSVG },
-        { key: "i5", link: "https://platforma.bz/", src: platformaSVG },
-        { key: "i6", link: "https://rcitsakha.ru/", src: rcitPNG },
-        { key: "i2", link: "https://endylab.ru/", src: endySVG },
-        // { key: "i2", link: "https://endylab.ru/", src: endySVG },
+        { link: "https://aostng.ru/", src: stngSVG },
+        { link: "https://leadgid.ru/", src: leadgidSVG },
+        { link: "https://codingteam.ru/", src: ctSVG },
+        { link: "https://glav-beer.ru/", src: glavbeerPNG },
+
+        { link: "https://rcitsakha.ru/", src: rcitPNG },
+        { link: "https://endylab.ru/", src: endySVG },
+        { link: "https://restomarket.me/", src: restomarketPNG },
+        { link: "https://platforma.bz/", src: platformaSVG },
+        { link: "https://appmost.ru/", src: mostSVG },
+        { link: "https://polar-aero.ru/", src: polarairPNG },
+        { link: "https://telezavr.com/", src: telezavrPNG },
+        { link: "https://yakutskcity.ru/", src: yakutskPNG },
     ];
 
     const imgItems = imgs.map((el, index) => (
-        <Link key={el.key} to={el.link} target="_blank">
+        <Link key={el.index} to={el.link} target="_blank">
             <img src={el.src}></img>
         </Link>
     ));

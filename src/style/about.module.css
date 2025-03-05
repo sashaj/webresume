@@ -4,14 +4,24 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    /* background-color: #000;
+    opacity: 20%; */
 }
 
 .companies img {
     max-height: 80px;
-    /* opacity: 80%; */
-    max-width: 120px;
-    filter: grayscale(20%);
+    width: 100%;
+    object-fit: contain;
+    filter: grayscale(200%);
+}
+
+.companies img:hover {
+    filter: grayscale(0%);
 }
 
 .companies a {
