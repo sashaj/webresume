@@ -9,8 +9,12 @@
     width: 100%;
     position: relative;
     padding: 20px;
-    /* background-color: #000;
-    opacity: 20%; */
+}
+
+@media (max-width: 500px) {
+    .companies {
+        max-width: 100%;
+    }
 }
 
 .companies img {

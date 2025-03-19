@@ -9,6 +9,12 @@
     transform: translateX(-50%);
 }
 
+@media (max-width: 400px) {
+    #root {
+        padding: 1rem;
+    }
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -19,6 +25,10 @@ ul {
 
 ul a {
     text-transform: uppercase;
-    color: #213547;
+    color: #000;
     font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
 }
