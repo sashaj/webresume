@@ -5,7 +5,7 @@ import leadgidSVG from "../assets/companies/leadgid.svg";
 import mostSVG from "../assets/companies/most.svg";
 import platformaSVG from "../assets/companies/platforma.svg";
 import stngSVG from "../assets/companies/stng.svg";
-import rcitPNG from "../assets/companies/rcit.png";
+import redLabSVG from "../assets/companies/redlab.svg";
 import restomarketPNG from "../assets/companies/restomarket.png";
 import glavbeerPNG from "../assets/companies/glavbeer.png";
 import polarairPNG from "../assets/companies/polarair.png";
@@ -27,8 +27,7 @@ export default function About() {
         { link: "https://leadgid.ru/", src: leadgidSVG },
         { link: "https://codingteam.ru/", src: ctSVG },
         { link: "https://glav-beer.ru/", src: glavbeerPNG },
-
-        { link: "https://rcitsakha.ru/", src: rcitPNG },
+        { link: "https://redlab.dev/", src: redLabSVG },
         { link: "https://endylab.ru/", src: endySVG },
         { link: "https://restomarket.me/", src: restomarketPNG },
         { link: "https://platforma.bz/", src: platformaSVG },
