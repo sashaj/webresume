@@ -11,6 +11,7 @@ import glavbeerPNG from "../assets/companies/glavbeer.png";
 import polarairPNG from "../assets/companies/polarair.png";
 import telezavrPNG from "../assets/companies/telezavr.png";
 import yakutskPNG from "../assets/companies/yakutsk.png";
+import RPCJPG from "../assets/companies/RPC.jpg";
 import { Link } from "react-router-dom";
 import styles from "../style/about.module.css";
 
@@ -30,8 +31,8 @@ export default function About() {
         { link: "https://redlab.dev/", src: redLabSVG },
         { link: "https://endylab.ru/", src: endySVG },
         { link: "https://restomarket.me/", src: restomarketPNG },
-        { link: "https://platforma.bz/", src: platformaSVG },
         { link: "https://appmost.ru/", src: mostSVG },
+        { link: "https://patriarchia.ru/", src: RPCJPG },
         { link: "https://polar-aero.ru/", src: polarairPNG },
         { link: "https://telezavr.com/", src: telezavrPNG },
         { link: "https://yakutskcity.ru/", src: yakutskPNG },
