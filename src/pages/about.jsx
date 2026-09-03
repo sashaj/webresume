@@ -6,12 +6,12 @@ import mostSVG from "../assets/companies/most.svg";
 import platformaSVG from "../assets/companies/platforma.svg";
 import stngSVG from "../assets/companies/stng.svg";
 import redLabSVG from "../assets/companies/redlab.svg";
-import restomarketPNG from "../assets/companies/restomarket.png";
-import glavbeerPNG from "../assets/companies/glavbeer.png";
-import polarairPNG from "../assets/companies/polarair.png";
-import telezavrPNG from "../assets/companies/telezavr.png";
-import yakutskPNG from "../assets/companies/yakutsk.png";
-import RPCJPG from "../assets/companies/RPC.jpg";
+import restomarketPNG from "../assets/companies/restomarket.png?w=300&format=webp";
+import glavbeerPNG from "../assets/companies/glavbeer.png?w=300&format=webp";
+import polarairPNG from "../assets/companies/polarair.png?w=300&format=webp";
+import telezavrPNG from "../assets/companies/telezavr.png?w=300&format=webp";
+import yakutskPNG from "../assets/companies/yakutsk.png?w=300&format=webp";
+import RPCJPG from "../assets/companies/RPC.jpg?w=300&format=webp";
 import { Link } from "react-router-dom";
 import styles from "../style/about.module.css";
 
@@ -19,7 +19,7 @@ export default function About() {
     const skillText = [
         { key: "1ab", text: "Hello! My name is Alexander Ivanov" },
         { key: "2ab", text: "I'm a front-end developer" },
-        { key: "3ab", text: "Based in Yakutsk, Russia (gmt/utc +9)" },
+        { key: "3ab", text: "Based in Da Nang, Vietnam (gmt/utc +9)" },
         //{ key: "4ab", text: "Test 7 main" },
     ];
 
@@ -38,9 +38,9 @@ export default function About() {
         { link: "https://yakutskcity.ru/", src: yakutskPNG },
     ];
 
-    const imgItems = imgs.map((el, index) => (
-        <Link key={el.index} to={el.link} target="_blank">
-            <img src={el.src}></img>
+    const imgItems = imgs.map((el) => (
+        <Link key={el.link} to={el.link} target="_blank" rel="noopener noreferrer">
+            <img src={el.src} alt="" loading="lazy" decoding="async" width="300" height="80" />
         </Link>
     ));
 
