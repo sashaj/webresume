@@ -18,8 +18,8 @@ import styles from "../style/about.module.css";
 export default function About() {
     const skillText = [
         { key: "1ab", text: "Hello! My name is Alexander Ivanov" },
-        { key: "2ab", text: "I'm a front-end developer" },
-        { key: "3ab", text: "Based in Da Nang, Vietnam (gmt/utc +9)" },
+        { key: "2ab", text: "I'm a Senior front-end developer" },
+        { key: "3ab", text: "Based in Da Nang, Vietnam (gmt/utc +7)" },
         //{ key: "4ab", text: "Test 7 main" },
     ];
 
