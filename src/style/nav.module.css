@@ -8,3 +8,20 @@
 .navItem {
     color: black;
 }
+
+.fadeIn {
+    animation: fadeIn 1s ease both;
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

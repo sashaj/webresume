@@ -1,3 +1,4 @@
+import { useLayoutEffect, useState } from "react";
 import Text from "../components/text";
 import ctSVG from "../assets/companies/codingteam.svg";
 import endySVG from "../assets/companies/endy.svg";
@@ -12,7 +13,7 @@ import polarairPNG from "../assets/companies/polarair.png?w=300&format=webp";
 import telezavrPNG from "../assets/companies/telezavr.png?w=300&format=webp";
 import yakutskPNG from "../assets/companies/yakutsk.png?w=300&format=webp";
 import RPCJPG from "../assets/companies/RPC.jpg?w=300&format=webp";
-import { Link } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
 import styles from "../style/about.module.css";
 
 export default function About() {
@@ -38,9 +39,19 @@ export default function About() {
         { link: "https://yakutskcity.ru/", src: yakutskPNG },
     ];
 
+    const [loadedCount, setLoadedCount] = useState(0);
+    const allLoaded = loadedCount >= imgs.length;
+    const handleImgDone = () => setLoadedCount((c) => c + 1);
+    const { setWaiting } = useOutletContext() ?? {};
+
+    useLayoutEffect(() => {
+        setWaiting?.(!allLoaded);
+        return () => setWaiting?.(false);
+    }, [allLoaded, setWaiting]);
+
     const imgItems = imgs.map((el) => (
         <Link key={el.link} to={el.link} target="_blank" rel="noopener noreferrer">
-            <img src={el.src} alt="" loading="lazy" decoding="async" width="300" height="80" />
+            <img src={el.src} alt="" decoding="async" width="300" height="80" onLoad={handleImgDone} onError={handleImgDone} />
         </Link>
     ));
 
